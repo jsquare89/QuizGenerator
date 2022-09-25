@@ -1,0 +1,253 @@
+:root{
+  --background-color: #d1cae2e7;
+  --dark-color: #452964;
+  --light-color: #e1d6f5;
+  --mid-color:#a49bd3;
+  --green:#94D7A2;
+  --red: #F8BCBC;
+  --font: karla;
+  --button-font: Inter;
+}
+/* :root{
+  --background-color: #dee6fde7;
+  --dark-color: #293264;
+  --light-color: #D6DBF5;
+  --mid-color:#c0c8f0;
+  --green:#94D7A2;
+  --red: #F8BCBC;
+  --font: karla;
+  --button-font: Inter;
+} */
+
+.app{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 550px;
+  min-height: 550px;
+  height: auto;
+  background-color: var(--background-color);
+  border-radius: 20px;
+  margin: 30px auto;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+
+/***** Buttons *****/
+
+.btn{
+  margin: 20px;
+  padding: 20px 20px;
+  background: var(--dark-color);
+  border-radius: 15px;
+  color:  white;
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+}
+
+.start-btn{
+  padding: 20px 40px;
+  align-self: center;
+}
+
+.options-btn{
+  margin: 0px;
+  padding: 20px 20px;
+  align-self: center;
+}
+
+
+.quiz-btn{
+  padding: 20px 20px;
+  align-self: center;
+}
+
+.answer-btn{
+  margin: 10px 0px;
+  padding: 6px 10px;
+  background: var(--background-color);
+  border-radius: 10px;
+  border: 1px solid var(--dark-color);
+  color: var(--dark-color) ;
+  font-family: var(--button-font);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.answer-deselected{
+  background: var(--background-color);
+  border: 1px solid var(--dark-color);
+  color: var(--dark-color) ;
+  cursor: pointer;
+}
+
+.answer-selected{
+  background: var(--mid-color);
+  border: 1px solid var(--mid-color);
+  color: var(--dark-color) ;
+  cursor: default;
+}
+
+.answer-correct{
+  background: var(--green);
+  border: 1px solid var(--green);
+  color: var(--dark-color) ;
+  font-weight: 500;
+  cursor: default;
+}
+
+.answer-incorrect{
+  background: var(--red);
+  border: 1px solid var(--red);
+  color: var(--dark-color) ;
+  cursor: default;
+  opacity: 0.5;
+}
+
+.answer-gray{
+  background: var(--mid-color);
+  border: 1px solid var(--mid-color);
+  color: var(--dark-color) ;
+  cursor: default;
+  opacity: 0.5;
+}
+
+.option-btn{
+  margin: 10px 0px;
+  padding: 6px 10px;
+  background: var(--background-color);
+  border-radius: 10px;
+  border: 1px solid var(--dark-color);
+  color: var(--dark-color) ;
+  font-family: var(--button-font);
+  font-size: 1 rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.option-selected{
+  background: var(--mid-color);
+  border: 1px solid var(--mid-color);
+  color: var(--dark-color) ;
+  cursor: default;
+}
+
+.saveOptions-btn{
+  max-width: 160px;
+  align-self: center;
+
+}
+
+/***** Quiz Components *****/
+
+.quiz{
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+.question{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+.question-text{
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+hr.rounded {
+  border: 0.794239px solid var(--mid-color);
+  border-radius: 5px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.answers{
+  display: inline-flex;
+  gap: 10px;
+}
+
+.bottom-quiz{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-text{
+  font-weight: bold;
+}
+
+
+/***** Startup Component *****/
+
+
+.startup{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 1;
+}
+
+.startup p{
+  margin-top: -10px;
+}
+
+.options-text{
+  margin-top: 20px;
+}
+
+
+/***** Options Component *****/
+.options{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 1;
+}
+
+.options-style{
+  font-weight: bold;
+  font-size: 1.18rem;
+}
+
+.difficulty-btns{
+  display: inline-flex;
+  justify-content: center;
+  gap: 10px;
+  
+}
+.category-btns .btn{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/***** Blob Styling *****/
+
+.blob1{
+  position:absolute;
+  width:  400px;
+  z-index: 0;
+  top: -150px;
+  right: -170px;
+}
+
+.blob2{
+  position:absolute;
+  width:  400px;
+  z-index: 0;
+  top: 300px;
+  right: 400px;
+}
