@@ -30,7 +30,7 @@ function App() {
     if(quizStarted && shouldGetQuestions.current){
       shouldGetQuestions.current = false;
       loadQuestionsAsync()
-    }
+    }   // eslint-disable-next-line
   }, [quizStarted])
 
   async function loadQuestionsAsync(){
@@ -102,7 +102,6 @@ function App() {
                                           <Startup startQuiz={startQuiz}
                                                    renderOptions={renderOptions}
                                                    options={options}
-                                                   categories={categories}
                                           />)}
     </div>
   );

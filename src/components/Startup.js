@@ -3,7 +3,7 @@ import '../App.css';
 import { capitalizeFirstLetter } from "../helper/helper";
 
 export default function Startup(props){
-    const {startQuiz, renderOptions, options, categories} = props
+    const {startQuiz, renderOptions, options} = props
 
     return (
         <div className="startup">
