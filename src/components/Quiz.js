@@ -17,7 +17,7 @@ export default function Quiz(props){
         if(props.loaded) {
             setQuestions(getAllQuestions())
             setMessageElement(null);
-        } // eslint-disable-next-line
+        }   // eslint-disable-next-line
     }, [props.loaded])
 
     function getAllQuestions(){
